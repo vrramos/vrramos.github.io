@@ -1,0 +1,63 @@
+body{
+    background-color: #EFEEF3;
+    font-family: 'Roboto', sans-serif;  
+    font-size: 19px;
+}
+
+h2, h3{
+    font-size: 40px;
+}
+
+.imagem-kiwi{
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.introducao{
+    background-color: #EE1D52;
+    color: white;
+    padding: 40px;
+    padding-top: 10px;
+}
+
+.kiwi-info{
+    padding: 100px;
+    line-height: 20px;
+}
+
+.font-texto{
+    font-family: 'Roboto Mono', monospace;
+    line-height: 28px;
+}
+
+table {
+    caption-side: bottom;
+    font-style: italic;
+    text-align: center;
+    }
+
+.tabela-nutricional{
+    background-color: #EE1D52;
+    padding: 100px;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.passo-a-passo{
+    padding: 50px;
+}
+
+footer{
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+.menu{
+    position: fixed;
+    background-color: black;
+    padding: 10px 887px 0px 10px;
+}
