@@ -1,13 +1,16 @@
 function verificaValorIndice(array){    
-    let menor = 0;
+    let i = 0;
+    let menorNum = 0;
+    
     for (indice in array){
-      if (array[indice] < indice){
-          menor = indice;
+      if (array[indice] < menorNum){
+        menorNum = array[indice];
+        i = indice;        
       }
     }
-    return menor;
+    return i;
 }
 
-let array = [2, -4, 6, 7, 10, 0, 2];
+let array = [2, 4, 6, 7, 10, 0, -3];
 
 console.log(verificaValorIndice(array));

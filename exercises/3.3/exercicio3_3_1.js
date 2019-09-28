@@ -6,6 +6,6 @@ function verificaPalindrome(palavra){
     return palavra == s;
 }
 
-var s = "omssimo";
+var s = "alalala";
 
 console.log(verificaPalindrome(s));
