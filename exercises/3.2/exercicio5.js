@@ -1,7 +1,11 @@
-let num = 9;
-
-if (num%num === 0 && num%1 === 0){
-    console.log("É um número primo.")
-}   else {
-    console.log("Não é um número primo.")
+function numPrimo(num){
+    for (let i = 2; i < num; i++){
+        if (num%i === 0){
+            return false;
+        } else {
+            return num !== 1;
+        }
+    }
 }
+let num = 4;
+console.log(numPrimo(num))
