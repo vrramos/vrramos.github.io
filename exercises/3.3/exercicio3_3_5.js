@@ -17,5 +17,5 @@ function verificaNumerosRepetidos(numeros){
     return numMaior;
 }
 
-let array = [5, 2, 2, 3, 2, 5, 8, 3, 2, 2,]
+let array = [5, 2, 2, 2, 3, 2, 5, 8, 2, 3, 3]
 console.log(verificaNumerosRepetidos(array.sort()))
