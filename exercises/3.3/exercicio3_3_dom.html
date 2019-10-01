@@ -39,17 +39,42 @@
         </div>
     </div>
     <script>
-        let texto = document.getElementById('texto-central');
-        texto.innerHTML = "Me vejo daqui a 2 anos em uma boa empresa, programando muito e correndo atrás dos meus sonhos e vontades."
-
-        let verdeTrybe = document.getElementsByClassName('main-content')[0]
-        verdeTrybe.style.backgroundColor = "green";
-
-        let center = document.getElementsByClassName('center-content')[0]
-        center.style.backgroundColor = "white"
-       
-        let textoPrincipal = document.getElementsByClassName('title')[0]
-        textoPrincipal.innerHTML = "Exercício 3.3 - JavaScript"
+        
+        function exercicio1() {
+            let texto = document.getElementById('texto-central');
+            return texto.innerHTML = "Me vejo daqui a 2 anos em uma boa empresa, programando muito e correndo atrás dos meus sonhos e vontades."
+        } 
+        
+        function exercicio2() {
+            let verdeTrybe = document.getElementsByClassName('main-content')[0]
+            return verdeTrybe.style.backgroundColor = "green";    
+        }
+        
+        function exercicio3() {
+            let center = document.getElementsByClassName('center-content')[0]
+            return center.style.backgroundColor = "white"
+        }
+        
+        function exercicio4() {
+            let textoPrincipal = document.getElementsByClassName('title')[0]
+            return textoPrincipal.innerHTML = "Exercício 3.3 - JavaScript"
+        }
+        
+        function exercicio5() {
+            let up = document.getElementsByTagName('p')
+            for ( i in up ) {
+              up[i].style = "text-transform: uppercase"
+            }
+        }
+        
+        console.log(
+            exercicio1(),
+            exercicio2(),
+            exercicio3(),
+            exercicio4(),
+            exercicio5()
+            )
+        
         /*
         Aqui você irá modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
