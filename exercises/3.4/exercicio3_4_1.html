@@ -57,11 +57,15 @@
 <body>
     <script>
     // Exercício 1
+    let body = document.getElementsByTagName('body')[0]
     let textoPrincipal = document.createElement('h1')
-    textoPrincipal.innerHTML = "Exercício 3.4 - JavaScript DOM"    
-    document.getElementsByTagName('body')[0].appendChild(textoPrincipal)    
+    textoPrincipal.textContent = "Exercício 3.4 - JavaScript DOM"    
+    body.appendChild(textoPrincipal)    
 
-        
+    // Exercício 2
+    let primeiraDiv = document.createElement('div')
+    primeiraDiv.classList.add('main-content')
+    body.appendChild(primeiraDiv)    
         
         
         
