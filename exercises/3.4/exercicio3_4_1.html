@@ -113,8 +113,19 @@
         adicionarConteudoLi("Sete")
         adicionarConteudoLi("Oito")
         adicionarConteudoLi("Nove")
-        adicionarConteudoLi("Dez")   
+        adicionarConteudoLi("Dez")  
+
+        // Exercício 9
+        function adicionarTitulos(quantidade){
+            for(let i = 0; i < quantidade; i++){
+                let titulo = document.createElement('h3')
+                primeiraDiv.appendChild(titulo)
+            }
+        } 
         
+        quantidadeH3 = 3;
+        adicionarTitulos(quantidadeH3)
+
     </script>
 </body>
 </html>
