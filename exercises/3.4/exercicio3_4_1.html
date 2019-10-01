@@ -18,7 +18,7 @@
         }
         
         .main-content .center-content {
-            background-color: red;
+            background-color: green;
             width: 50%;
             margin-left: auto;
             margin-right: auto;
@@ -46,7 +46,7 @@
             background-color: blue;
             width: 60%;
             margin-left: auto;
-            margin-right: 0;
+            margin-right: auto;
         }
         
         .main-content .description {
@@ -59,7 +59,8 @@
         // Exercício 1
         let body = document.getElementsByTagName('body')[0]
         let textoPrincipal = document.createElement('h1')
-        textoPrincipal.textContent = "Exercício 3.4 - JavaScript DOM"    
+        textoPrincipal.textContent = "Exercício 3.4 - JavaScript DOM"
+        textoPrincipal.classList.add("title")    
         body.appendChild(textoPrincipal)    
         
         // Exercício 2
@@ -112,19 +113,22 @@
         adicionarConteudoLi("Seis")
         adicionarConteudoLi("Sete")
         adicionarConteudoLi("Oito")
-        adicionarConteudoLi("Nove")
-        adicionarConteudoLi("Dez")  
 
         // Exercício 9
         function adicionarTitulos(quantidade){
             for(let i = 0; i < quantidade; i++){
                 let titulo = document.createElement('h3')
+                titulo.classList.add('description')
                 primeiraDiv.appendChild(titulo)
+
             }
         } 
         
-        quantidadeH3 = 3;
+        let quantidadeH3 = 3;
         adicionarTitulos(quantidadeH3)
+
+        // Segunda Parte
+        primeiraDiv.removeChild(terceiraDiv)       
 
     </script>
 </body>
