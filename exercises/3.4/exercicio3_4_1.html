@@ -93,6 +93,28 @@
         img.src = "https://picsum.photos/200"
         terceiraDiv.appendChild(img)
         
+        // Exercício 8
+        let ul = document.createElement('ul')        
+        ul.classList.add('lista-ul')
+        quartaDiv.appendChild(ul)
+        
+        function adicionarConteudoLi(conteudo_li) {
+            let li = document.createElement('li')
+            li.textContent = conteudo_li;
+            document.querySelector('.lista-ul').appendChild(li)
+        }
+
+        adicionarConteudoLi("Um")
+        adicionarConteudoLi("Dois")
+        adicionarConteudoLi("Três")
+        adicionarConteudoLi("Quatro")
+        adicionarConteudoLi("Cinco")
+        adicionarConteudoLi("Seis")
+        adicionarConteudoLi("Sete")
+        adicionarConteudoLi("Oito")
+        adicionarConteudoLi("Nove")
+        adicionarConteudoLi("Dez")   
+        
     </script>
 </body>
 </html>
