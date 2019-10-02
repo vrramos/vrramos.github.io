@@ -28,55 +28,70 @@
         <input type="number" id="percent2-input" size="2">
     </label>
     <button id="percent-button">Calculate</button>
-    <br><br>
+    <p id="percent-result"></p>
     
     <label>Calculate area of circle with radius:
         <input type="number" id="area-input" size="2">
     </label>
     <button id="area-button">Calculate</button> 
-    <br><br>
-    <div id="solution"></div>
+    <p id="area-result"></p>
     
     <script>
         // squareNumber
         let squareButton = document.querySelector('#square-button')
         let result = document.querySelector('#square-result')
-              
+        
         squareButton.addEventListener('click', function(event){
             event.preventDefault()
-
+            
             let squareNumber = document.querySelector('#square-input').value  
             
             let squaredNum = squareNumber * squareNumber
-
+            
             result.textContent = "O resultado do quadrado do número "+squareNumber+
             ' é '+squaredNum+'.'
+        })    
+        
+        // HalfNumber
+        let halfButton = document.querySelector('#half-button')
+        let halfResult = document.querySelector('#half-result')
+        
+        halfButton.addEventListener('click', function(event){
+            event.preventDefault()
+            
+            let halfNumber = document.querySelector('#half-input').value
+            
+            let half = halfNumber / 2
+            
+            halfResult.textContent = "A metade do número "+halfNumber+" é "+half+"."
+        }) 
+        
+        // percentOf
+        let percentButton = document.querySelector('#percent-button')
+        let resultPercent = document.querySelector('#percent-result')
+        
+        percentButton.addEventListener('click', function(event){
+            event.preventDefault()
+            
+            let num1 = document.querySelector('#percent1-input').value
+            let num2 = document.querySelector('#percent2-input').value
+            
+            let num = (num1/num2) * 100
+            
+            resultPercent.textContent = num1+' é '+num+'% de '+num2+'.'
+        })
 
-            // HalfNumber
-            let halfButton = document.querySelector('#half-button')
-            let halfResult = document.querySelector('#half-result')
+        let areaButton = document.querySelector('#area-button')
+        let resultArea = document.querySelector('#area-result')
 
-            halfButton.addEventListener('click', function(event){
-                event.preventDefault()
-                
-                let halfNumber = document.querySelector('#half-input').value
+        areaButton.addEventListener('click', function(event){
+            event.preventDefault()
+            let areaInput = document.querySelector('#area-input').value
 
-                let half = halfNumber / 2
+            let area = Math.PI * areaInput * areaInput
 
-                halfResult.textContent = "A metade do número "+halfNumber+" é "+half+"."
-            }) 
-
-            //percentOf           
-       
-       
-       
-       
-       
-       
-       
-       
-       
-        })       
+            resultArea.textContent = "A área do círculo com raio "+areaInput+" é "+area+"."
+        })   
         
     </script>
     
