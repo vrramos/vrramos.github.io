@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+</head>
+<body>
+    
+    <button id="btn">Iniciar</button> <br><br><br>
+    <img id="img" style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+    
+    
+    <script>
+        let btn = document.querySelector('#btn')
+        let img = document.getElementsByTagName('img')[0]
+        img.style.left = '0px'
+        
+        btn.addEventListener('click', function(){
+            
+            function catWalk() {
+                img.style.left = (parseInt(img.style.left)+10)+'px'   
+            }  
+            window.setInterval (catWalk, 50)
+        })       
+    </script>   
+</body>
+</html>
