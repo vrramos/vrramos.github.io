@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Exercício 6.1</title>
 </head>
 <body>    
@@ -44,10 +45,19 @@
                 <label for="complemento">Complemento:</label>
                 <input type="radio" name="complemento" value="Casa"> Casa
                 <input type="radio" name="complemento" value="Apartamento"> Apartamento
+            </div>           
+        </fieldset>     
+        
+        <fieldset>
+            <legend>Último Emprego</legend>
+            
+            <div>               
+                <label for="resumoCurriculo">Resumo do Currículo</label> <br>
+                <textarea type="textarea" maxlength="1000" cols="90" rows="10" required="required" id="resumoCurriculo"></textarea> 
             </div>
             
             
-        </fieldset>     
+        </fieldset>
     </form>    
 </body>
 </html>
