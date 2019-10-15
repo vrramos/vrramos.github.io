@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script>    
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Exercício 6.1</title>
 </head>
@@ -18,7 +18,7 @@
             
             <div>
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required="required" maxlength="50" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$">
+                <input type="text" name="email" id="email" required="required" maxlength="50" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
             </div>
             
             <div>
@@ -68,15 +68,15 @@
 
             <div>
                 <label for="data-de-inicio">Data de Início</label>
-                <input type="date" name="dataDeInicio" id="data-de-inicio" required="required">
-            </div>           
-        </fieldset>
+                <input type="date" name="dataDeInicio" id="data-de-inicio" required="required" pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/">
+            </div>      
 
-        <div> <br>
-            <input type="submit" id="button-submit" value="Enviar Formulário">
-            <input type="reset" value="Limpar">
-        </div>
-        
+            <div> <br>
+                <input type="submit" id="button-submit" value="Enviar Formulário">
+                <input type="reset" value="Limpar">
+            </div>     
+        </fieldset>          
     </form>    
+
 </body>
 </html>

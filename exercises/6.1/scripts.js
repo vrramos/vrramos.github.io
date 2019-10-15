@@ -4,18 +4,11 @@ window.onload = function() {
 
         botaoFormulario = document.querySelector('#button-submit')
         botaoFormulario.addEventListener('click', function(event){
+       
             event.preventDefault()
-
-            validarData()
-
+            pegarResultados()
+            inserirResultadosNaDiv()
         })
-    }
-
-    function validarData() {
-        let dataInformada
-
-        dataInformada = document.querySelector('#data-de-inicio').value
-        console.log(dataInformada)
     }
 
     function inserirEstados() {
@@ -35,6 +28,38 @@ window.onload = function() {
             tagOption.textContent = estados[i]
         }    
     }
+
+    function criaUmaDivParaInserirOsResultados() {
+        let divResultados, elementoPai
+        divResultados = document.createElement('div')
+        elementoPai = document.getElementsByTagName('body')[0].appendChild(divResultados)
+        return divResultados
+    }
+
+    function pegarResultados() {
+        let nome, email, cpf, estado, complemento
+        let informacoes = []
+        
+        nome = document.querySelector('#nome').value
+        email = document.querySelector('#email').value
+        cpf = document.querySelector("#cpf").value
+
+        return informacoes = [nome,email,cpf]
+    }
+
+    function inserirResultadosNaDiv() {
+        let i, span
+
+        for(i = 0; i < pegarResultados().length; i++){
+            span = document.createElement('span')
+            criaUmaDivParaInserirOsResultados().appendChild(span)
+            span.textContent = pegarResultados()[i]
+        }
+    }
+
+
+
     inserirEstados()
     enviarFormulario()
+    criaUmaDivParaInserirOsResultados()
 }
