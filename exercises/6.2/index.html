@@ -4,6 +4,9 @@
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <script src="moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
@@ -101,7 +104,7 @@
             <div class="field">
                 <label class="label" for="data-de-inicio">Data de Início</label>
                 <div class="control">
-                    <input class="input is-rounded" type="date" name="dataDeInicio" id="data-de-inicio" required="required" pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/">
+                    <input class="input is-rounded" type="text" name="dataDeInicio" id="data-de-inicio" required="required" pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/">
                 </div>
             </div>      
             
