@@ -2,8 +2,17 @@
     font-style: italic;
 }
 
+.img-explosao-de-cores,
+.img-pesadelo-dos-mares,
+.img-lagosta-boxeadora,
+.imagem-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
-    margin: 50px 100px 0px 100px;
+    margin: 100px 100px 0px 100px;
 }
 
 h1, h2 {
@@ -12,23 +21,45 @@ h1, h2 {
     align-items: center;
 }
 
-.imagem-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 main {
-    margin: 100px;
+    margin: 40px 150px 40px 150px;
 }
 
 p {
-    margin: 50px;
+    margin: 20px 0 20px 0;
     line-height: 30px;
     font-size: 19px;
 }
 
 .tabela-stomatopoda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+}
+
+.referencias {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+}
+
+.rodape {
+    padding: 60px;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,20 +9,20 @@
     <title>Stomatopoda</title>
 </head>
 <body>
-    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-danger is-fixed-top" role="navigation" aria-label="main navigation">
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">Página Inicial</a>
-                <a class="navbar-item">Sobre</a>
-                <a class="navbar-item">Contato</a>
+                <a class="navbar-item" href="#header-menu">Página Inicial</a>
+                <a class="navbar-item" href="#sobre-menu">Sobre</a>
+                <a class="navbar-item" href="#footer-menu">Contato</a>
             </div>
         </div>
     </nav>        
     <header>
-        <section class="header">
+        <section class="header" id="header-menu">
             <h1 class="title is-2">Soco a 80km/h: Conheça o Stomatopoda.</h1>
-            <div class="imagem-principal">
-                <img src="img/stomatopoda.jpeg" alt="Foto do Stomatopoda">
+            <div class="img-lagosta-boxeadora">
+                <img src="img/lagosta-boxeadora.jpg" alt="Foto do Stomatopoda na Mão de Alguém">     
             </div>
             <p>
                 Dê uma olhadinha no belíssimo animal acima. Ele tem uma aparência incrível, não é mesmo? Com tantas cores e cheio de estruturas interessantes. 
@@ -33,7 +33,7 @@
     </header> 
     <main>
         <article>
-            <section>
+            <section id="sobre-menu">
                 <h2 class="title is-3">Fatos sobre o Stomatopoda.</h2>
                 <h3 class="title is-4">Iniciando a Jornada</h3>
                 <div class="tabela-stomatopoda">
@@ -59,12 +59,13 @@
                 <p>
                     Para começar, as <span class="nome-cientifico">Odontodactylus Scyllarus</span> contam com olhos incríveis, que possuem três pontos focais cada e são capazes de enxergar do espectro ultravioleta ao infravermelho. 
                     Para que você tenha uma ideia, o olho humano contém milhões de células fotorreceptoras, entre elas os cones, que são as que nos permitem ver as cores.
-                </p>
-                
+                </p>           
             </section>
             <section>
                 <h4 class="title is-5">Explosão de Cores</h4>
-                <img src="img/explosao-de-cores.jpg" alt="Foto do Stomatopoda de Perto">
+                <div class="img-explosao-de-cores">
+                    <img src="img/explosao-de-cores.jpg" alt="Foto do Stomatopoda de Perto">
+                </div>
                 <p>
                     Nossos olhos possuem três tipos desses receptores — que respondem à luz azul, verde e vermelha —, que nos permitem perceber o espectro de cores que vemos. 
                     Os cães contam com apenas dois tipos de cones (verde e azul), e é por isso que eles vêm tons de azul, verde e um pouco de amarelo. 
@@ -73,7 +74,9 @@
             </section>
             <section>
                 <h4 class="title is-5">Pesadelo dos mares</h4>
-                <img src="img/pesadelo-dos-mares.jpg" alt="Foto do Stomatopoda">
+                <div class="img-pesadelo-dos-mares">
+                    <img src="img/pesadelo-dos-mares.jpg" alt="Foto do Stomatopoda no Mar">
+                </div>
                 <p>
                     As lagostas-boxeadoras costumam ser encontradas próximo à costa de mares tropicais e subtropicais e são predadoras letais que se alimentam de caranguejos, camarões, moluscos e peixes. 
                     Na verdade, apesar de não serem muito grandes — entre 15 e 30 centímetros —, as tamarutacas são um verdadeiro pesadelo dos oceanos, sendo consideradas como um dos animais mais violentos do planeta.
@@ -81,26 +84,30 @@
             </section>
             <section>
                 <h4 class="title is-5">Golpe ninja</h4>
+                <div class="imagem-principal">
+                    <img src="img/stomatopoda.jpeg" alt="Foto do Stomatopoda em Cores Vivas">
+                </div>
                 <p>
                     Essas patinhas se movem tão depressa que a água próxima a elas chega a ferver — em um fenômeno chamado supercavitação —, além de provocar uma onda de choque capaz de matar a presa mesmo que a lagosta maldita erre o golpe. 
                     Assim, com esse movimento ninja, as tamarutacas assassinam outros animais, despedaçando os coitados, mesmo que contem com carapaças protetoras.
                 </p>
-                <div class="video-golpe-ninja">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PpW9RIy7Gus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
             </section>
             <section class="referencias">
                 <h4 class="title is-5">Referências Bibliográficas</h4>
-                <a href="https://www.megacurioso.com.br/animais-sinistros/36141-mantis-conheca-a-lagosta-boxeadora-o-bicho-mais-desgracado-dos-mares-.htm">Mega Curioso</a>
-                <a href="https://pt.wikipedia.org/wiki/Stomatopoda">Wikipedia</a>    
+                <ul>
+                    <li><a href="https://www.megacurioso.com.br/animais-sinistros/36141-mantis-conheca-a-lagosta-boxeadora-o-bicho-mais-desgracado-dos-mares-.htm">Mega Curioso</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda">Wikipedia</a></li>
+                </ul>         
             </section>
         </article>        
         <aside>
             <h4 class="title is-5">Veja o Stomatopoda em ação!</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Li1k5hGBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos">
+                <iframe src="https://www.youtube.com/embed/E0Li1k5hGBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </aside>
     </main>
-    <footer class="rodape">
+    <footer class="rodape" id="footer-menu">
         <span>Conteúdo Compilado por Victor Felipe | Trybe</span>
     </footer>
 </body>
