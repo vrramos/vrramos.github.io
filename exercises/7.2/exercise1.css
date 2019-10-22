@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body {
     font-size: 17px;
     margin: 0 10px;
@@ -17,7 +21,7 @@ figure {
     margin: 30px 0;
 }
 
-@media screen and (min-width: 470px) and (max-width: 944px) {
+@media screen and (min-width: 470px) and (max-width: 950px) {
     body {
         background-color: red;
         font-size: 20px;
@@ -39,7 +43,7 @@ figure {
     }
 }
 
-@media screen and (min-width: 945px) {
+@media screen and (min-width: 951px) {
     body {
         background-color: yellow ;
         font-size: 25px;
@@ -57,6 +61,6 @@ figure {
 
     figure {
         width: 32%;
-        margin: auto;
+        margin: auto 5px;
     }
 }
