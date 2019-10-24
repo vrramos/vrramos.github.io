@@ -37,20 +37,20 @@
         }
         
         #exercise-1 {
-            animation-name: bolinhas;
+            animation: bolinhas 3s linear;
             animation-delay: 1s;
-            animation-duration: 3s;
         }
         
         #exercise-2 {
-            animation-name: bolinhas;
-            animation-delay: 2s;
-            animation-duration: 2s; 
+            animation: bolinhas 2s linear;
+            animation-delay: 2s; 
         }
-        
+
         #exercise-3 {
-            animation-name: bolinhas;
-            animation-delay: 1s;
+            animation: bolinhas 3s linear;
+            animation-delay: 1s;  
+            animation-direction: alternate-reverse;     
+            animation-timing-function: steps-end(1);     
         }
         
         @keyframes bolinhas {
