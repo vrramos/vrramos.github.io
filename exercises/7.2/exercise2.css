@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background: white;
+}
+
+#titulo-principal > h1 {
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #990088;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#myLinks a:hover {
+    background-color: #000;
+    color: #eeeeee;
+}
+
+.active {
+    background-color: #990088;
+    color: white;
+}
