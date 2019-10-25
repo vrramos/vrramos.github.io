@@ -76,7 +76,7 @@
             animation-direction: reverse;
             animation-play-state: paused;
         }
-
+        
         #exercise-6-square:hover ~ #exercise-6 {
             animation-play-state: running;
         }
@@ -91,6 +91,16 @@
             }
         }
         
+        #exercise-7 {
+            animation: exercise-7 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes exercise-7 {
+            to {
+                width: 100%;
+            }
+        }       
         
     </style>
 </head>
