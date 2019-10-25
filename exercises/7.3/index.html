@@ -37,20 +37,30 @@
         }
         
         #exercise-1 {
-            animation: bolinhas 3s linear;
+            animation: bolinhas 3s;
             animation-delay: 1s;
         }
         
         #exercise-2 {
-            animation: bolinhas 2s linear;
+            animation: bolinhas 2s;
             animation-delay: 2s; 
         }
-
+        
         #exercise-3 {
-            animation: bolinhas 3s linear;
+            animation: bolinhas 3s;
             animation-delay: 1s;  
             animation-direction: alternate-reverse;     
             animation-timing-function: steps-end(1);     
+        }
+
+        #exercise-4 {
+            animation-name: bolinhas;
+            animation-duration: 5s;
+            animation-play-state: paused;
+        }
+        
+        #exercise-4:hover {
+            animation-play-state: running;
         }
         
         @keyframes bolinhas {
@@ -62,6 +72,7 @@
                 margin-left: 95%;
             }
         }
+        
         
     </style>
 </head>
