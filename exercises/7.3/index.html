@@ -49,10 +49,10 @@
         #exercise-3 {
             animation: bolinhas 3s;
             animation-delay: 1s;  
-            animation-direction: alternate-reverse;     
+            animation-direction: reverse;     
             animation-timing-function: steps-end(1);     
         }
-
+        
         #exercise-4 {
             animation: bolinhas 5s;
             animation-play-state: paused;
@@ -61,13 +61,23 @@
         #exercise-4:hover {
             animation-play-state: running;
         }
-
+        
         #exercise-5 {
             animation: bolinhas 5s;
             animation-play-state: paused;
         }
-
+        
         #section-5:hover > #exercise-5 {
+            animation-play-state: running;
+        }
+        
+        #exercise-6 {
+            animation: bolinhas 5s;
+            animation-direction: reverse;
+            animation-play-state: paused;
+        }
+
+        #exercise-6-square:hover ~ #exercise-6 {
             animation-play-state: running;
         }
         
