@@ -153,6 +153,42 @@
                 width: 100%;
             }
         }
+
+        #exercise-11_1, #exercise-11_2, #exercise-11_3, #exercise-11_4, #exercise-11_5 {
+            animation: exercise-11 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #exercise-11_1 {
+            animation-timing-function: linear;
+        }
+
+        #exercise-11_2 {
+            animation-timing-function: ease-in-out;
+        }
+
+        #exercise-11_3 {
+            animation-timing-function: ease-in;
+        }
+
+        #exercise-11_4 {
+            animation-timing-function: ease-out;
+        }
+
+        #exercise-11_5 {
+            animation-timing-function: ease;
+        }
+
+        @keyframes exercise-11 {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: 95%;
+            }
+        }
         
     </style>
 </head>
