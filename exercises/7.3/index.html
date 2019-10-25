@@ -54,12 +54,20 @@
         }
 
         #exercise-4 {
-            animation-name: bolinhas;
-            animation-duration: 5s;
+            animation: bolinhas 5s;
             animation-play-state: paused;
         }
         
         #exercise-4:hover {
+            animation-play-state: running;
+        }
+
+        #exercise-5 {
+            animation: bolinhas 5s;
+            animation-play-state: paused;
+        }
+
+        #section-5:hover > #exercise-5 {
             animation-play-state: running;
         }
         
