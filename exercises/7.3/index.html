@@ -115,11 +115,12 @@
         #exercise-9 {
             animation: exercise-9 4s;
             animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
+            animation-direction: alternate;
         }
 
         @keyframes exercise-9 {
             33% {
+         
                 background: yellow;
             }
 
@@ -129,6 +130,27 @@
 
             100% {
                 background: green;
+            }
+        }
+
+        #exercise-10 {
+            animation: exercise-10 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+        }
+
+        @keyframes exercise-10 {
+            33% {
+                background: yellow;
+            }
+
+            66% {
+                background: blue;
+            }
+
+            to {
+                background: green;
+                width: 100%;
             }
         }
         
