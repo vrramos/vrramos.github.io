@@ -36,3 +36,17 @@ document.querySelector('#button').addEventListener('click', () => {
         results.textContent = `Você clicou em mim ${clickCount} vezes seu danado!`
     }
 })
+
+//Exercício 4
+function trocador (outraPalavra, string){
+    string.replace("x", outraPalavra);
+    return string;
+}
+const skills = ["javascript" , "html", "css", "top", "legaldemais"];
+function trocador2 () {
+    // let novosSkills = skills.sort();
+    let novasSkills = skills.sort() + trocador("topx", "legal");
+    return novasSkills;
+}
+console.log(trocador("topxxx", "legal"));
+console.log(trocador2());
