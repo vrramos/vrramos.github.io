@@ -9,11 +9,27 @@ window.onload = () => {
 
 function compatibleCheck() {
     if (typeof(Storage) != "undefined") {
+        let background = localStorage.background
+        if (background) document.body.style.backgroundColor = background
+        
+        let fontColor = localStorage.fontColor
+        if (fontColor) article().style.color = fontColor
+        
         let fontSize = localStorage.fontSize
-        if (fontSize) document.getElementsByTagName('article')[0].style.fontSize = `${changeFontSize}px`
+        if (fontSize) article().style.fontSize = `${fontSize}px`
+
+        let lineHeight = localStorage.lineHeight
+        if (lineHeight) article().style.lineHeight = `${lineHeight}`
+
+        let fontType = localStorage.fontType
+        if (fontType) article().style.fontFamily = `${fontType}`
     } else {
         document.write("Sem suporte para Web Storage")
     }
+}
+
+function article() {
+    return document.getElementsByTagName('article')[0]
 }
 
 function changeBackgroundColor() {
@@ -21,7 +37,7 @@ function changeBackgroundColor() {
     for(let button of btnBackground) {
         button.addEventListener('click', () => {            
             let changeBackground = event.target.innerHTML
-            localStorage.setItem("background Color", changeBackground)
+            localStorage.setItem("background", changeBackground)
             document.body.style.backgroundColor = changeBackground
         })
     }
@@ -32,8 +48,8 @@ function changeFontColor() {
     for(let button of btnFontColor) {
         button.addEventListener('click', () => {            
             let changeFontColor = event.target.innerHTML
-            localStorage.setItem("Font Color", changeFontColor)
-            document.getElementsByTagName('article')[0].style.color = changeFontColor
+            localStorage.setItem("fontColor", changeFontColor)
+            article().style.color = changeFontColor
         })
     }
 }
@@ -43,8 +59,8 @@ function changeFontSize() {
     for(let button of btnFontSize) {
         button.addEventListener('click', () => {            
             let changeFontSize = event.target.innerHTML
-            localStorage.setItem("Font Size", changeFontSize)
-            document.getElementsByTagName('article')[0].style.fontSize = `${changeFontSize}px`
+            localStorage.setItem("fontSize", changeFontSize)
+            article().style.fontSize = `${changeFontSize}px`
         })
     }
 }
@@ -54,8 +70,8 @@ function changeLineHeight() {
     for(let button of btnLineHeight) {
         button.addEventListener('click', () => {            
             let lineHeight = event.target.innerHTML
-            localStorage.setItem("Font Line Height", lineHeight)
-            document.getElementsByTagName('article')[0].style.lineHeight = `${lineHeight}`
+            localStorage.setItem("lineHeight", lineHeight)
+            article().style.lineHeight = `${lineHeight}`
         })
     }
 }
@@ -65,9 +81,8 @@ function changeFontType() {
     for(let button of btnFontType) {
         button.addEventListener('click', () => {            
             let fontType = event.target.innerHTML
-            localStorage.setItem("Font Type", fontType)
-            document.getElementsByTagName('article')[0].style.fontFamily = `${fontType}`
+            localStorage.setItem("fontType", fontType)
+            article().style.fontFamily = `${fontType}`
         })
     }
 }
-
