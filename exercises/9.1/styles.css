@@ -1,0 +1,18 @@
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+    font-family: ;
+}
+
+.preferences {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 20px 400px;
+    border: 1px solid black;
+    padding: 10px 20px;
+}
