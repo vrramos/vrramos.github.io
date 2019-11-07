@@ -9,12 +9,15 @@ const toFarenheit = (degreeCelsius) => (degreeCelsius * 9/5) + 32
 const temperatureInFarenheit = (temperature) => console.log(`It is currently ${toFarenheit(temperature)}ºF at Mars`)
 const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`)
 
+const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`)
+
 // crie a função sendMarsTemperature abaixo
-const sendMarsTemperature = (callback) => {
+const sendMarsTemperature = (allRight, allWrong) => {
     const temperature = getMarsTemperature()
-    return callback(temperature)
+    const chancesToSend = Math.floor(Math.random() * 100)
+    
+    chancesToSend < 60 ? allWrong("Robot is Busy.") : allRight(temperature)
 }
 
-sendMarsTemperature(temperatureInFarenheit)
-sendMarsTemperature(greet)
-
+sendMarsTemperature(temperatureInFarenheit, handleError)
+sendMarsTemperature(greet, handleError)
