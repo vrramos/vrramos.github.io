@@ -11,11 +11,10 @@ const greet = (temperature) => console.log(`Hi there! Curiosity here. Right now 
 
 const handleError = (errorReason) => console.log(`Error getting temperature: ${errorReason}`)
 
-// crie a função sendMarsTemperature abaixo
 const sendMarsTemperature = (allRight, allWrong) => {
     const temperature = getMarsTemperature()
     const chancesToSend = Math.floor(Math.random() * 100)
-    
+
     chancesToSend < 60 ? allWrong("Robot is Busy.") : allRight(temperature)
 }
 
