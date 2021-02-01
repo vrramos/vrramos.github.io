@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <script src="moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Exercício 6.2</title>
+</head>
+<body>    
+    <header class="section">
+        <h1 class="title has-text-centered">Formulário</h1>
+    </header>
+    <hr class="hr">
+    <section class="section">
+        <form action="" method="get">   
+            
+            <div class="field">
+                <label class="label" for="nome">Nome</label>
+                <div class="control">                    
+                    <input class="input is-rounded" type="text" name="nome" id="nome" required="required" maxlength="40">
+                </div>                
+            </div>
+            
+            <div class="field">
+                <label class="label" for="email">E-mail</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="email" id="email" required="required" maxlength="50" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="cpf">CPF</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" id="cpf" name="cpf" required="required" maxlength="11">
+                </div>              
+            </div>
+            
+            <div class="field">
+                <label class="label" for="endereco">Endereço</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="endereco" id="endereco" required="required">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="cidade">Cidade</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="cidade" id="cidade">
+                </div>
+            </div>
+            
+            <div class="field">
+                <div class="control">    
+                    <label class="label" for="estados">Estado</label>           
+                    <div class="select">                              
+                        <div class="select is-rounded">          
+                            <select name="estados" id="estados" required="required"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <label class="label">Complemento</label>
+            <div class="field">             
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" id="casa" name="complemento" value="Casa">
+                        Casa
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="complemento" value="Apartamento"> 
+                        Apartamento
+                    </label>
+                </div>
+            </div>           
+            
+            <div class="field">
+                <div class="control">
+                    <label class="label" for="resumoCurriculo">Resumo do Currículo</label>
+                    <textarea class="textarea is-small" type="textarea" maxlength="1000" cols="90" rows="10" required="required" id="resumoCurriculo"></textarea> 
+                </div>               
+            </div>
+            
+            <div class="field">
+                <label class="label" for="ultimo-cargo">Cargo</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="cargo" id="ultimo-cargo" required="required">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="desc-cargo">Descrição do Cargo</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="descricao-cargo" id="desc-cargo" maxlength="500" required="required">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label" for="data-de-inicio">Data de Início</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" name="dataDeInicio" id="data-de-inicio" required="required" pattern="/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/">
+                </div>
+            </div>      
+            
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="submit" id="button-submit" class="button is-success">Enviar Formulário</button>
+                </div>
+                <div class="control">
+                    <button type="reset" class="button is-danger">Limpar</button>
+                </div>
+            </div>              
+        </form>    
+    </section>   
+</body>
+</html>

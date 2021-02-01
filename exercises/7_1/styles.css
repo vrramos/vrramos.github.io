@@ -1,0 +1,35 @@
+.nome-cientifico {
+    font-style: italic;
+}
+
+header {
+    margin: 50px 100px 0px 100px;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 100px;
+}
+
+p {
+    margin: 50px;
+    line-height: 30px;
+    font-size: 19px;
+}
+
+.tabela-stomatopoda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
