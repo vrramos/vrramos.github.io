@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 3.4</title>
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+        .title {
+            text-align: center;
+        }
+        
+        .main-content {
+            background-color: yellow;
+        }
+        
+        .main-content .center-content {
+            background-color: green;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .main-content .center-content p {
+            font-style: italic;
+        }
+        
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+        
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+        
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Exercício 1
+        let body = document.getElementsByTagName('body')[0]
+        let textoPrincipal = document.createElement('h1')
+        textoPrincipal.textContent = "Exercício 3.4 - JavaScript DOM"
+        textoPrincipal.classList.add("title")    
+        body.appendChild(textoPrincipal)    
+        
+        // Exercício 2
+        let primeiraDiv = document.createElement('div')
+        primeiraDiv.classList.add('main-content')
+        body.appendChild(primeiraDiv)    
+        
+        // Exercício 3
+        let segundaDiv = document.createElement('div')
+        segundaDiv.classList.add('center-content')
+        primeiraDiv.appendChild(segundaDiv) 
+        
+        // Exercício 4
+        let primeiroParagrafo = document.createElement('p')
+        primeiroParagrafo.textContent = "They're Taking the Hobbits to Isengard"
+        segundaDiv.appendChild(primeiroParagrafo)
+        
+        // Exercício 5
+        let terceiraDiv = document.createElement('div')
+        terceiraDiv.classList.add('left-content') 
+        primeiraDiv.appendChild(terceiraDiv) 
+        
+        // Exercício 6
+        let quartaDiv = document.createElement('div')
+        quartaDiv.classList.add('right-content') 
+        primeiraDiv.appendChild(quartaDiv)  
+        
+        // Exercício 7
+        let img = document.createElement('img')
+        img.classList.add('small-image')
+        img.src = "https://picsum.photos/200"
+        terceiraDiv.appendChild(img)
+        
+        // Exercício 8
+        let ul = document.createElement('ul')        
+        ul.classList.add('lista-ul')
+        quartaDiv.appendChild(ul)
+        
+        function adicionarConteudoLi(conteudo_li) {
+            let li = document.createElement('li')
+            li.textContent = conteudo_li;
+            document.querySelector('.lista-ul').appendChild(li)
+        }
+
+        adicionarConteudoLi("Um")
+        adicionarConteudoLi("Dois")
+        adicionarConteudoLi("Três")
+        adicionarConteudoLi("Quatro")
+        adicionarConteudoLi("Cinco")
+        adicionarConteudoLi("Seis")
+        adicionarConteudoLi("Sete")
+        adicionarConteudoLi("Oito")
+
+        // Exercício 9
+        function adicionarTitulos(quantidade){
+            for(let i = 0; i < quantidade; i++){
+                let titulo = document.createElement('h3')
+                titulo.classList.add('description')
+                primeiraDiv.appendChild(titulo)
+
+            }
+        } 
+        
+        let quantidadeH3 = 3;
+        adicionarTitulos(quantidadeH3)
+
+        // Segunda Parte
+        primeiraDiv.removeChild(terceiraDiv)       
+
+    </script>
+</body>
+</html>
